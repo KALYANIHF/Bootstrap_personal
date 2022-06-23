@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Group</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-success active">
+          <input type="radio" name="options" id="option1" checked />Active
+        </label>
+        <label class="btn btn-success">
+          <input type="radio" name="options" id="option2" />CheckBox1
+        </label>
+        <label class="btn btn-success">
+          <input type="radio" name="options" id="option3" />CheckBox2
+        </label>
+      </div>
+      <hr />
+      <div class="btn-group" role="group" aria-label="Basic Example">
+        <button class="btn btn-secondary" type="button">Left</button>
+        <button class="btn btn-secondary" type="button">Middle</button>
+        <button class="btn btn-secondary" type="button">Right</button>
+      </div>
+      <hr />
+      <!-- you can marge multiple btn-group inside the btn-toolbar to toggle between them -->
+      <div
+        class="btn-toolbar"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
+        <!-- first buttons group -->
+        <div class="btn-group" role="group" aria-label="first button Group">
+          <button class="btn btn-info">1</button>
+          <button class="btn btn-info">2</button>
+          <button class="btn btn-info">3</button>
+          <button class="btn btn-info">4</button>
+          <button class="btn btn-info">5</button>
+        </div>
+        <br />
+        <!-- second button group -->
+        <div
+          class="btn-group-sm ml-5"
+          role="group"
+          aria-label="Second button Group"
+        >
+          <button class="btn btn-info">1</button>
+          <button class="btn btn-info">2</button>
+          <button class="btn btn-info">3</button>
+          <button class="btn btn-info">4</button>
+          <button class="btn btn-info">5</button>
+          <button class="btn btn-info">6</button>
+          <button class="btn btn-info">7</button>
+        </div>
+        <!-- third button group -->
+        <div
+          class="btn-group ml-5"
+          role="group"
+          aria-label="third button group"
+        >
+          <button class="btn btn-success">1</button
+          ><button class="btn btn-success">2</button
+          ><button class="btn btn-success">3</button
+          ><button class="btn btn-success">4</button
+          ><button class="btn btn-success">5</button
+          ><button class="btn btn-success">6</button
+          ><button class="btn btn-success">7</button
+          ><button class="btn btn-success">8</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
